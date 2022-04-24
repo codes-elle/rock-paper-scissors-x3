@@ -1,0 +1,45 @@
+body{
+    background-color: pink;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.gameContainer{
+    border: 15px solid;
+    border-image: linear-gradient(#ff512f, #dd2476, #1c64ff) 1;
+    animation: rotate 2.5s ease-in infinite;
+    margin: 140px 70px;
+    padding: 20px;
+}
+
+.choiceContainer{
+    position: relative;
+    top: 60%;
+    text-align: center;
+}
+
+.choiceContainer h2{
+    font-size: 3rem;
+}
+
+.button-container{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.button button{
+    border-radius: 10%;
+    border: 1px solid black;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1.2rem;
+    background-color: pink;
+
+}
+
+
+@keyframes rotate{
+    50%{
+        border-image: linear-gradient(360deg, #ff512f, #dd2476, #1c64ff) 1;
+    }
+}
